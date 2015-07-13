@@ -1,0 +1,353 @@
+<!doctype html>
+<html>
+<head>
+<meta charset="utf-8">
+<title>GitHub Pages Test 4 working with Jekyll</title>
+<style>
+body{margin:0 auto;font-family:Helvetica,sans-serif;}
+header{width:100%;height:15%;background:#000;color:#fff;padding:5px;}
+footer{width:100%;height:15%;background:#000;color:#fff;padding:5px;}
+#main{width:100%;height:70%;background:#fff;color:#000;}
+#main h1{color:#365f91}
+#sidenavbar{width:18%;height:70%;background:#f0f0f0;float:left;padding:4px;}
+#sidenavbar a{text-decoration:none;color:black;}
+#box{width:80%;height:70%;background:#fff;float:right;padding:4px;}
+#box img{max-width:100%}
+.clearboth{clear:both;}
+@media screen and (max-width:1000px){
+	header{width:100%;height:15%;background:#000;color:#fff;padding:5px;}
+footer{width:100%;height:15%;background:#000;color:#fff;padding:5px;}
+#main{width:100%;height:70%;background:#fff;color:#000;}
+#main h1{color:#365f91}
+#sidenavbar{width:40%;height:70%;background:#f0f0f0;float:left;padding:4px;}
+#sidenavbar a{text-decoration:none;color:black;}
+#box{width:50%;height:70%;background:#fff;float:right;padding:4px;}
+#box img{max-width:100%}
+.clearboth{clear:both;}
+	
+}
+</style>
+</head>
+
+<body>
+<header><h1>GitHub Pages Test 4 working with Jekyll</h1></header>
+<div id="main">
+<div id="sidenavbar">
+<a name="top"></a>
+<ul>
+<li><a href="#UsingJekyll">Using Jekyll</a></li>
+<li><a href="#InstallingJekyll">Installing Jekyll</a></li>
+<li><a href="#RunningJekyll">Running Jekyll</a></li>
+<li><a href="#CheckingForRuby">Checking for Ruby version</a></li>
+<li><a href="#DownloadingRuby">Downloading Ruby</a></li>
+<li><a href="#InstallingRuby">Intalling Ruby</a></li>
+<li><a href="#GemInstallBundler">Gem Install Bundler</a></li>
+<li><a href="#InstallingDevkit">Installing Devkit</a></li>
+<li><a href="#RunJekyllServe">Run Jekyll Serve</a></li>
+<li><a href="#IndexPage">Index page must be built</a></li>
+<li><a href="#WhatIsJekyll">What is Jekyll?</a></li>
+<li><a href="#QuickStartGuide">Jekyll Quick Start Guide</a></li>
+<li><a href="#JekyllInstallation">Jekyll Installation</a></li>
+<li><a href="#JekyllBasicUsage">Jekyll Basic Usage</a></li>
+<li><a href="#JekyllDirectoryStructure">Jekyll Directory Structure</a></li>
+<li><a href="#JekyllOnWindows">Jekyll on Windows</a></li>
+<li><a href="#JekyllFrontMatter">Jekyll Front Matter</a></li>
+<li><a href="#DigressionToYAML">Digression to YAML</a></li>
+<li><a href="#JekyllFrontMatterContinued">Jekyll Front Matter Continued</a></li>
+<li><a href="#JekyllWritingPosts">Jekyll Writing Posts</a></li>
+<li><a href="#DigressionToTemplates">Digression to Templates</a></li>
+<li><a href="#DigressionToLiquid">Digression to Liquid</a></li>
+<li><a href="#WritingPostsContinued">Writing Posts Continued</a></li>
+<li><a href="#CreatingPages">Creating Pages</a></li>
+<li><a href="#GitHubPages">GithHub Pages</a></li>
+<li><a href="#Resources">Resources</a></li>
+
+
+
+
+</ul>
+</div>
+<div id="box">
+<a name="UsingJekyll"></a>
+
+<img src="images/using_jekyll.jpg" alt="using jekyll">
+<p>
+<a href="#top" style="font-weight:bold">TOP</a>
+</p>
+<a name="InstallingJekyll"></a>
+
+<img src="images/installing_jekyll.jpg" alt="installing jekyll">
+<p>
+<a href="#top" style="font-weight:bold">TOP</a>
+</p>
+<a name="RunningJekyll"></a>
+
+<img src="images/running_jekyll.jpg" alt="running jekyll">
+<p>
+<a href="#top" style="font-weight:bold">TOP</a>
+</p>
+<a name="CheckingForRuby"></a>
+<h1>Checking for Ruby</h1>
+<img src="images/checking_ruby_version.jpg" alt="checking for ruby version">
+<p>
+In the image above, windows dos says 'ruby' is not recognized... So you do not have 
+ruby on your machine, and you must install it.
+</p>
+<p>
+<a href="#top" style="font-weight:bold">TOP</a>
+</p>
+<a name="DownloadingRuby"></a>
+<h1>Download Ruby</h1>
+<img src="images/download_ruby.jpg" alt="Download Ruby">
+<p>
+<a href="#top" style="font-weight:bold">TOP</a>
+</p>
+<a name="InstallingRuby"></a>
+<img src="images/installing_ruby1.jpg" alt="installing ruby">
+<img src="images/installing_ruby2.jpg" alt="installing ruby">
+<img src="images/installing_ruby3.jpg" alt="installing ruby">
+<img src="images/installing_ruby4.jpg" alt="installing ruby">
+<p>
+<a href="#top" style="font-weight:bold">TOP</a>
+</p>
+<a name="GemInstallBundler"></a>
+<h1>Gem Install Bundler</h1>
+<img src="images/gem_install_bundler.jpg" alt="gem install bundler">
+<p>
+In the above referenced install we received an install error, telling us we need
+to install the DevKit.
+</p>
+<p>
+<a href="#top" style="font-weight:bold">TOP</a>
+</p>
+<a name="InstallingDevkit"></a>
+<h1>Installing Devkit</h1>
+<img src="images/installing_devkit1.jpg" alt="installing devkit">
+
+<img src="images/installing_devkit2.jpg" alt="installing devkit">
+<img src="images/installing_devkit3.jpg" alt="installing devkit">
+<p>Download DevKit.zip. Extract it to a permanent location. In this case, we extracted it off the
+c: drive, c:\DevKit. Change to the DevKit subdirectory.
+</p>
+<img src="images/installing_devkit4.jpg" alt="installing devkit">
+<p>
+Make changes to the config.yml file in DevKit:
+</p>
+<img src="images/installing_devkit5.jpg" alt="installing devkit">
+<p>
+Run ruby dk.rb install in DevKit:
+</p>
+<img src="images/installing_devkit6.jpg" alt="installing devkit">
+<p>
+Change directory to GitHubPages4 and run bundle install
+</p>
+<img src="images/installing_devkit7.jpg" alt="installing devkit">
+
+<p>
+<a href="#top" style="font-weight:bold">TOP</a>
+</p>
+<a name="RunJekyllServe"></a>
+<h1>Run bundle exe jekyll serve</h1>
+<img src="images/run_jekyll_serve.jpg" alt="run jekyll serve">
+<p>
+<a href="#top" style="font-weight:bold">TOP</a>
+</p>
+<a name="IndexPage"></a>
+<h1>Index page must be built</h1>
+<p>
+The index page must be built in order for the page to render when the Jekyll server runs.
+If it is not built, you will get a "Forbidden" error.
+</p>
+<img src="images/index_file_built.jpg" alt="index file built">
+<img src="images/index_file_built2.jpg" alt="index file built">
+<p>
+<a href="#top" style="font-weight:bold">TOP</a>
+</p>
+<a name="WhatIsJekyll"></a>
+<h1>What Is Jekyll?</h1>
+<img src="images/jekyll_home1.jpg" alt="Jekyll Home Page">
+<img src="images/jekyll_home2.jpg" alt="Jekyll Home Page">
+<img src="images/what_is_jekyll_1.jpg" alt="What is Jekyll?">
+<img src="images/what_is_jekyll_2.jpg" alt="What is Jekyll?">
+<p>
+<a href="#top" style="font-weight:bold">TOP</a>
+</p>
+<a name="QuickStartGuide"></a>
+<h1>Quick Start Guide</h1>
+<img src="images/jekyll_quickstart_guide1.jpg" alt="Jekyll Quick Start Guide">
+<img src="images/jekyll_quickstart_guide2.jpg" alt="Jekyll Quick Start Guide">
+<p>
+<a href="#top" style="font-weight:bold">TOP</a>
+</p>
+<a name="JekyllInstallation"></a>
+<h1>Jekyll Installation</h1>
+<img src="images/jekyll_installation1.jpg" alt="Jekyll Installation">
+<img src="images/jekyll_installation2.jpg" alt="Jekyll Installation">
+<img src="images/jekyll_installation3.jpg" alt="Jekyll Installation">
+
+<p>
+<a href="#top" style="font-weight:bold">TOP</a>
+</p>
+<a name="JekyllBasicUsage"></a>
+<h1>Jekyll Basic Usage</h1>
+
+<img src="images/jekyll_basic_usage1.jpg" alt="Jekyll basic usage">
+<img src="images/jekyll_basic_usage2.jpg" alt="Jekyll basic usage">
+<img src="images/jekyll_basic_usage3.jpg" alt="Jekyll basic usage">
+<p>
+<a href="#top" style="font-weight:bold">TOP</a>
+</p>
+<a name="JekyllDirectoryStructure"></a>
+<h1>Jekyll Directory Structure</h1>
+<img src="images/jekyll_directory_structure1.jpg" alt="Jekyll directory structure">
+<img src="images/jekyll_directory_structure2.jpg" alt="Jekyll directory structure">
+<img src="images/jekyll_directory_structure3.jpg" alt="Jekyll directory structure">
+<img src="images/jekyll_directory_structure4.jpg" alt="Jekyll directory structure">
+<p>
+<a href="#top" style="font-weight:bold">TOP</a>
+</p>
+<a name="JekyllOnWindows"></a>
+<h1>Jekyll On Windows</h1>
+<img src="images/jekyll_on_windows1.jpg" alt="Jekyll on windows">
+<img src="images/jekyll_on_windows2.jpg" alt="Jekyll on windows">
+<p>
+The Jekyll documentation refers to Julian Thilo's Run Jekyll on Windows website.
+However, after reading the documentation there, if you have followed the GitHub and Jekyll
+instructions on GitBash, you should be able to successfully run the Jekyll server.
+</p>
+<p>
+If you want to set up code highlighting on windows, then you should follow the instructions
+on the website and set up Python and pip.
+</p>
+<img src="images/running_jekyll_on_windows1.jpg" alt="running jekyll on windows">
+<img src="images/running_jekyll_on_windows2.jpg" alt="running jekyll on windows">
+
+<p>
+<a href="#top" style="font-weight:bold">TOP</a>
+</p>
+<a name="JekyllFrontMatter"></a>
+<h1>Jekyll Front Matter</h1>
+<img src="images/jekyll_front_matter1.jpg" alt="Jekyll Front Matter">
+<p>
+<a href="#top" style="font-weight:bold">TOP</a>
+</p>
+<a name="DigressionToYAML"></a>
+<h1>Digression To YAML</h1>
+<img src="images/yaml_1.jpg" alt="YAML">
+<img src="images/yaml_2.jpg" alt="YAML">
+<img src="images/yaml_3.jpg" alt="YAML">
+<img src="images/yaml_4.jpg" alt="YAML">
+
+<p>
+<a href="#top" style="font-weight:bold">TOP</a>
+</p>
+<a name="JekyllFrontMatterContinued"></a>
+<h1>Jekyll Front Matter Continued</h1>
+<img src="images/jekyll_front_matter2.jpg" alt="Jekyll Front Matter Continued">
+<img src="images/jekyll_front_matter3.jpg" alt="Jekyll Front Matter Continued 3">
+<img src="images/jekyll_front_matter4.jpg" alt="Jekyll Front Matter Continued 4">
+<p>
+<a href="#top" style="font-weight:bold">TOP</a>
+</p>
+<a name="JekyllWritingPosts"></a>
+<h1>Jekyll Writing Posts</h1>
+<img src="images/jekyll_writing_posts1.jpg" alt="Jekyll writing posts 1">
+<img src="images/jekyll_writing_posts2.jpg" alt="Jekyll writing posts 2">
+<img src="images/jekyll_writing_posts3.jpg" alt="Jekyll writing posts 3">
+<img src="images/jekyll_writing_posts4.jpg" alt="Jekyll writing posts 4">
+<p>
+<a href="#top" style="font-weight:bold">TOP</a>
+</p>
+<a name="DigressionToTemplates"></a>
+<h1>Digression To Templates</h1>
+<img src="images/jekyll_templates1.jpg" alt="Jekyll Templates 1">
+<img src="images/jekyll_templates2.jpg" alt="Jekyll Templates 2">
+<img src="images/jekyll_templates3.jpg" alt="Jekyll Templates 3">
+<p>
+<a href="#top" style="font-weight:bold">TOP</a>
+</p>
+<img src="images/jekyll_templates4.jpg" alt="Jekyll Templates 4">
+<img src="images/jekyll_templates5.jpg" alt="Jekyll Templates 5">
+<img src="images/jekyll_templates6.jpg" alt="Jekyll Templates 6">
+<img src="images/jekyll_templates7.jpg" alt="Jekyll Templates 7">
+<p>
+<a href="#top" style="font-weight:bold">TOP</a>
+</p>
+<a name="DigressionToLiquid"></a>
+<h1>Digression to Liquid</h1>
+<img src="images/liquid_1.jpg" alt="Liquid 1">
+<img src="images/liquid_2.jpg" alt="Liquid 2">
+<img src="images/liquid_3.jpg" alt="Liquid 3">
+<p>
+<a href="#top" style="font-weight:bold">TOP</a>
+</p>
+<img src="images/liquid_4.jpg" alt="Liquid 4">
+<img src="images/liquid_5.jpg" alt="Liquid 5">
+<img src="images/liquid_6.jpg" alt="Liquid 6">
+<p>
+<a href="#top" style="font-weight:bold">TOP</a>
+</p>
+<img src="images/liquid_7.jpg" alt="Liquid 7">
+<img src="images/liquid_8.jpg" alt="Liquid 8">
+<img src="images/liquid_9.jpg" alt="Liquid 9">
+<p>
+<a href="#top" style="font-weight:bold">TOP</a>
+</p>
+<img src="images/liquid_10.jpg" alt="Liquid 10">
+<img src="images/liquid_11.jpg" alt="Liquid 11">
+<img src="images/liquid_12.jpg" alt="Liquid 12">
+<img src="images/liquid_13.jpg" alt="Liquid 13">
+<img src="images/liquid_14.jpg" alt="Liquid 14">
+<p>
+<a href="#top" style="font-weight:bold">TOP</a>
+</p>
+<a name="WritingPostsContinued"></a>
+<h1>Writing Posts Continued</h1>
+<img src="images/jekyll_writing_posts5.jpg" alt="Jekyll writing posts 5">
+<img src="images/jekyll_writing_posts6.jpg" alt="Jekyll writing posts 6">
+<img src="images/jekyll_writing_posts7.jpg" alt="Jekyll writing posts 7">
+<p>
+<a href="#top" style="font-weight:bold">TOP</a>
+</p>
+<a name="CreatingPages"></a>
+<h1>Creating Pages</h1>
+<img src="images/jekyll_creating_pages1.jpg" alt="Jekyll creating pages 1">
+<img src="images/jekyll_creating_pages2.jpg" alt="Jekyll creating pages 2">
+<img src="images/jekyll_creating_pages3.jpg" alt="Jekyll creating pages 3">
+<p>
+<a href="#top" style="font-weight:bold">TOP</a>
+</p>
+<a name="GitHubPages"></a>
+<h1>GitHub Pages</h1>
+<img src="images/jekyll_github_pages1.jpg" alt="Jekyll GitHub pages1">
+<img src="images/jekyll_github_pages2.jpg" alt="Jekyll GitHub pages2">
+<img src="images/jekyll_github_pages3.jpg" alt="Jekyll GitHub pages3">
+<img src="images/Jekyll_github_pages4.jpg" alt="Jekyll GitHub pages4">
+<p>
+<a href="#top" style="font-weight:bold">TOP</a>
+</p>
+<a name="Resources"></a>
+<h1>Resources</h1>
+<ul>
+<li>
+<a href="https://help.github.com/articles/using-jekyll-with-pages/" target="_blank">GitHub Help Using Jekyll with Pages</a></li>
+<li>
+<a href="http://jekyllrb.com/" target="_blank">Jekyll Home</a></li>
+<li>
+<a href="http://liquidmarkup.org/" target="_blank">Liquid Home</a></li>
+<li>
+<a href="https://github.com/Shopify/liquid/wiki" target="_blank">Liquid Wiki</a></li>
+<li>
+<a href="TheBookofRuby.pdf">The Book of Ruby</a></li>
+</ul>
+<p>
+<a href="#top" style="font-weight:bold">TOP</a>
+</p>
+</div>
+</div>
+<div class="clearboth"></div>
+<footer>
+<h1>GitHub Pages Test 4 Dr. Jekyll and Mister Hyde</h1>
+</footer>
+</body>
+</html>
